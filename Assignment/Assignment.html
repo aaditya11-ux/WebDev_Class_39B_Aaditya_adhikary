@@ -1,66 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Aaditya Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <h1>Aaditya </h1>
-    <h2>Chief Executive Officer (CEO)</h2> 
-    <a href="#introduction">Introduction</a> |
-    <a href="#experience">Experience</a> |
-    <a href="#skills">Skills</a> |
-    <a href="#projects">Projects</a> |
-    <a href="#video">Video</a>
-    <h3 id="introduction">Introduction</h3>
-   <p>
-    <b>Aaditya </b> is a <i>skilled and experienced</i> professional in the tech industry. He is studying a B.Sc<sup>(Hons)</sup>
-    degree .
-</p>
- 
-    <img src="car.jpg" alt="Boss photo" width="300">
-    <p>Be the best version of yourself.</p>
- 
-    <h3 id="experience">Experience</h3>
-    <ol>
-      <li>CEO of Private Company</li> 
-      <li>Web Developer</li>
-       <li>Project Manager</li> 
-      <li>Software Developer</li>
-    </ol>
- 
-<h2 id="skills">Skills</h2> <table border="1">
-     <tr> 
-        <th>Skills</th> 
-        <th>Years</th> 
-    </tr> 
-    <tr>
-         <td>HTML</td>
-          <td>2</td> 
-        </tr> 
-        <tr> 
-            <td>Python</td> 
-            <td>2</td> 
-        </tr>
-         <tr> 
-            <td>Java</td> 
-            <td>1</td> 
-        </tr>
-         <tr> 
-            <td>MySQL</td> 
-            <td>1</td> 
-        </tr> 
-    </table>
- 
-    <h3 id="projects">Projects</h3>
-    <ul>
-       <li>Portfolio Website</li>
-       <li>Company Website</li>
-    </ul>
- 
-    <h3 id="video">Video</h3>
-    <iframe width="400" height="300" src="https://www.youtube.com/embed/QdBZY2fkU-0"></iframe>
-    
+
+    <header>
+        <h1>Aaditya</h1>
+        <h2>Chief Executive Officer (CEO)</h2>
+
+        <nav>
+            <a href="#introduction">Introduction</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#video">Video</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Introduction Section -->
+        <section id="introduction">
+
+            <h2>Introduction</h2>
+
+            <p>
+                <b>Aaditya</b> is a <i>skilled and experienced</i>
+                professional in the tech industry. He is studying a
+                B.Sc<sup>(Hons)</sup> degree.
+            </p>
+
+            <figure class="boss-image">
+                <img src="car.jpg" alt="Boss photo" width="300" height="300">
+                <figcaption>Be the best version of yourself.</figcaption>
+            </figure>
+
+        </section>
+
+
+        <!-- Experience Section -->
+        <section id="experience">
+
+            <h2>Experience</h2>
+
+            <ol>
+                <li>CEO of Private Company</li>
+                <li>Web Developer</li>
+                <li>Project Manager</li>
+                <li>Software Developer</li>
+            </ol>
+
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills">
+
+            <h2>Skills</h2>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Skills</th>
+                        <th>Years</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>2 Years</td>
+                    </tr>
+
+                    <tr>
+                        <td>Python</td>
+                        <td>2 Years</td>
+                    </tr>
+
+                    <tr>
+                        <td>Java</td>
+                        <td>1 Year</td>
+                    </tr>
+
+                    <tr>
+                        <td>MySQL</td>
+                        <td>1 Year</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects">
+
+            <h2>Projects</h2>
+
+            <ul>
+                <li>Portfolio Website</li>
+                <li>Company Website</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Video Section -->
+        <section id="video">
+
+            <h2>YouTube Video</h2>
+
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/QdBZY2fkU-0"
+                    title="YouTube video"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+
+            <h2>Contact Form</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <label for="phone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required>
+
+                <label for="gender">Gender:</label>
+
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="role">Role:</label>
+
+                <select id="role" name="role" required>
+                    <option value="">Select Role</option>
+                    <option value="student">Student</option>
+                    <option value="employee">Employee</option>
+                    <option value="manager">Manager</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
 </body>
 </html>
+
