@@ -1,0 +1,170 @@
+/* Body */
+
+body {
+    background-color: #eef2ff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: #4f46e5;
+    color: white;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Navigation Links */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* Sections */
+
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Introduction */
+
+#introduction h2 {
+    text-align: left;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+#introduction p {
+    text-align: justify;
+}
+
+/* Boss Image */
+
+.boss-image {
+    text-align: center;
+}
+
+.boss-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.boss-image figcaption {
+    font-weight: bold;
+    font-size: 18px;
+    color: #7c3aed;
+}
+
+/* Experience */
+
+#experience h2 {
+    color: #4f46e5;
+}
+
+#experience li:nth-child(odd) {
+    font-weight: lighter;
+}
+
+#experience li:nth-child(even) {
+    font-weight: bold;
+    color: #7c3aed;
+}
+
+/* Skills Table */
+
+#skills h2 {
+    color: #4f46e5;
+}
+
+#skills table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#skills th {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px;
+}
+
+#skills td {
+    border: 1px solid #c4b5fd;
+    padding: 10px;
+}
+
+#skills tr:nth-child(even) {
+    background-color: #ede9fe;
+}
+
+/* Projects */
+
+#projects h2 {
+    color: #4f46e5;
+}
+
+#projects li {
+    background-color: #ddd6fe;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* YouTube Video */
+
+.video-container {
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 560px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+
+#contact h2 {
+    color: #4f46e5;
+}
+
+#contact form {
+    width: 60%;
+    margin: auto;
+}
+
+#contact label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contact input,
+#contact select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #a78bfa;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
